@@ -1,5 +1,5 @@
 .heading {
-margin-top: 120px;
+    margin-top: 120px;
 
     display: flex;
     flex-direction: column;
@@ -10,8 +10,20 @@ margin-top: 120px;
         font-size: 60px;
         font-weight: 600;
     }
+        
     .wrapper {
         position: relative;
+
+        .offset {
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translateX(-50%);
+        }
+        .text {
+            white-space: nowrap;
+            color: $red;
+        }
     }
 
 }
